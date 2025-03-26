@@ -1,2 +1,3 @@
--- script that lists all records of the table 'second_table' of the database 'hbtn_0c_0' in your MySQL server
-SELECT score, name FROM second_table ORDER BY score DESC;
+-- lists all shows contained in hbtn_0d_tvshows that have at least one genre linked
+-- lists all rows of a database that have one column in common
+SELECT tv_shows.title, tv_show_genres.genre_id FROM tv_shows INNER JOIN tv_show_genres ON tv_shows.id = tv_show_genres.show_id ORDER BY tv_shows.title ASC, tv_show_genres.genre_id ASC;

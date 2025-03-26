@@ -1,2 +1,6 @@
--- script that lists all records with a 'score >= 10' in the table 'second_table' of the database 'hbtn_0c_0' in your MySQL server
-SELECT score, name FROM second_table WHERE score >= 10 ORDER BY score DESC;
+-- Import the database dump of hbtn_0d_tvshows to your MySQL server: download (same as 10-genre_id_by_show.sql)
+-- Write a script that lists all shows contained in the database hbtn_0d_tvshows.
+SELECT tv_shows.title, tv_show_genres.genre_id
+FROM tv_shows
+LEFT JOIN tv_show_genres ON tv_shows.id = tv_show_genres.show_id
+ORDER BY tv_shows.title ASC, tv_show_genres.genre_id ASC;

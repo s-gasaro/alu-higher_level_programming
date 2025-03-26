@@ -1,2 +1,3 @@
---  script that prints the full description of the table 'first_table' from the database 'hbtn_0c_0' in your MySQL server
-SHOW CREATE TABLE `first_table`;
+-- creates the table unique_id on your MySQL server
+-- creates a table
+CREATE TABLE IF NOT EXISTS unique_id (id INT DEFAULT 1 UNIQUE, name VARCHAR(256));
