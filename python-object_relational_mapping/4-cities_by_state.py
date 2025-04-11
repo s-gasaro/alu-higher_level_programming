@@ -1,5 +1,6 @@
-i
-ut all cities from a database
+#!/usr/bin/python3
+"""
+Program prints out all cities from a database
 """
 
 
