@@ -1,3 +1,3 @@
 #!/usr/bin/node
-console.log('JavaScript is amazing');
+myvar= "JavaScript is amazing"
 
