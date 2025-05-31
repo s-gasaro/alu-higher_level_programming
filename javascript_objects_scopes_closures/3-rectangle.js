@@ -7,6 +7,12 @@ class Rectangle {
       this.height = h;
     }
   }
+
+  print () {
+    if (this.width && this.height) {
+      console.log(('X'.repeat(this.width) + '\n').repeat(this.height).trim());
+    }
+  }
 }
 
 module.exports = Rectangle;
